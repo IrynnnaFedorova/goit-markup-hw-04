@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-* {
+/** {
   padding: 0;
   margin: 0;
   border: 0;
@@ -30,7 +30,7 @@ footer,
 header,
 aside {
   display: block;
-}
+}*/
 
 .hidden {
   position: absolute;
@@ -76,6 +76,11 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .header-container {
@@ -271,7 +276,7 @@ img {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-bottom: 10px;
 }
 
@@ -281,7 +286,7 @@ img {
   font-size: 16px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 .bgcteam {
@@ -290,11 +295,16 @@ img {
   flex-basis: calc((100% / 4- 30px));
   margin-top: 30px;
   margin-left: 30px;
+  padding-bottom: 30px;
   outline: 1px solid var(--border-portfoli);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: var(--white-text-color);
+}
+
+.team-img {
+  margin-bottom: 30px;
 }
 
 .team-representiv {
@@ -332,13 +342,13 @@ img {
 .characteristic {
   /*flex-basis: calc((100% / 4- 30px));*/
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
 .characteristic-item {
-  width: calc(100% / 4- 30px);
+  width: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -427,7 +437,7 @@ img {
   font-weight: normal;
   font-size: 16px;
   font-family: inherit;
-  padding-left: 24px;
+  /*padding-left: 24px;*/
 }
 
 .portfoliowork {
@@ -443,7 +453,7 @@ img {
 .bgcproduct {
   background-color: var(--white-text-color);
   text-align: left;
-  flex-basis: calc((100% / 3- 30px));
+  flex-basis: calc(100% / 3 - 30px);
   /*margin-top: 30px;*/
   margin-left: 30px;
   margin-top: 30px;
@@ -468,6 +478,7 @@ img {
 
 .textdecoport {
   margin-bottom: 4px;
+  font-size: 18px;
   /*padding-top: 20px;
   padding-left: 24px;*/
 }
@@ -494,11 +505,6 @@ img {
 .footer .logo {
   margin-bottom: 20px;
   display: block;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .work-secondheading {
@@ -530,3 +536,41 @@ img {
   text-align: center;
   border: 1px solid #black;
 }*/
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  outline: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/headerimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*button::before{
+  width: 20px;
+  height: 20px;
+  background-color: ;
+  content:"";
+  color: beige;
+  margin-right:10px;
+  background-image:url();
+  background-size:contain;*/
+
+characteristic-item::before {
+  content: "";
+  display: inline-block;
+  widht: 40px;
+  height: 40px;
+  outline: 1px solid red;
+  /*(если иконка на 100процентов ширины,убираем ширину и инлайн-блок на блок (иконки после хедера))*/
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+}
