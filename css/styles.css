@@ -55,7 +55,7 @@ body {
 
 p,
 h1,
-h1,
+h2,
 h3,
 h4,
 h5,
@@ -166,6 +166,18 @@ img {
 .site-navcolor-item:not(:last-child) {
   margin-right: 50px;
 }
+
+/*.site-navcolor-item::before {
+  content: "";
+  display: inline-block;
+  widht: 16px;
+  height: 12px;
+  outline: 1px solid red;
+  /*(если иконка на 100процентов ширины,убираем ширину и инлайн-блок на блок (иконки после хедера))*/
+/*background-image: url(../images/envelope.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}*/
 
 .site-navcolor .link {
   color: var(--title-text-color);
@@ -563,14 +575,68 @@ img {
   background-image:url();
   background-size:contain;*/
 
-characteristic-item::before {
+.characteristic .characteristic-item::before {
   content: "";
-  display: inline-block;
-  widht: 40px;
-  height: 40px;
-  outline: 1px solid red;
-  /*(если иконка на 100процентов ширины,убираем ширину и инлайн-блок на блок (иконки после хедера))*/
-  background-image: url();
+  display: block;
+  height: 120px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: rgba(245, 244, 250, 1);
+  background-position: center;
+  border-radius: 4px;
 }
+.characteristic-item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+.characteristic-item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.characteristic-item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+.characteristic-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.clientheading {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+}
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.clients-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.clients-links {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+/*.icon {
+  background-image: url(../images/antenna.svg);
+}
+/*.icon-anten {
+  background-image: url(../images/antenna.svg);
+  /* background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(245, 244, 250, 1);
+  background-position: center;}*/
