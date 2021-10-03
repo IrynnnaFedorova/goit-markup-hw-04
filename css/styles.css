@@ -631,6 +631,76 @@ img {
   border-radius: 4px;
 }
 
+.team-networks-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-networks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -16px;
+  margin-left: -16px;
+}
+
+.footer-link {
+  margin-top: 72px;
+  position: relative;
+}
+
+.footer-join-title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.footer-networks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  /*margin-right: 100px;*/
+  /*padding-right: 10px;*/
+}
+.footer-networks-links {
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.footer-networks-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.svg.address-link-icon {
+  width: 30px;
+  height: 16px;
+  fill: #757575;
+  /*align-items: baseline;
+  /* padding-right: 10px; */
+  /* padding-top: 6px; */
+  /*padding-left: 3px;
+  padding-right: 3px;
+  float: left;
+  overflow: hidden;*/
+}
+
+/*.svg.address-link-icon::before {
+  content: "";
+  display: block;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*background-color: rgba(245, 244, 250, 1);
+  background-position: center;
+  border-radius: 4px;*/
+
 /*.icon {
   background-image: url(../images/antenna.svg);
 }
@@ -639,4 +709,4 @@ img {
   /* background-size: contain;
   background-repeat: no-repeat;
   background-color: rgba(245, 244, 250, 1);
-  background-position: center;}*/
+  background-position: center;}*/ ;
