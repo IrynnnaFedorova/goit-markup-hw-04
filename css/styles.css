@@ -298,7 +298,7 @@ img {
   font-size: 16px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-  /*padding-bottom: 30px;*/
+  padding-bottom: 10px;
 }
 
 .bgcteam {
@@ -635,6 +635,17 @@ img {
   margin-right: 10px;
 }
 
+.team-networks-list {
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  border-radius: 50%;
+  /*background-color: rgba(45, 62, 158, 0.1);*/
+  fill: #2196f3;
+  margin-top: 28px;
+  margin-left: 20px;
+}
 .team-networks {
   display: flex;
   flex-wrap: wrap;
